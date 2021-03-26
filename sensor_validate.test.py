@@ -3,8 +3,8 @@ import sensor_validate
 
 class SensorValidatorTest(unittest.TestCase):
   def test_reports_error_when_soc_jumps(self):
-    self.assertTrue(
-      sensor_validate.validate_charging_parameter_reading([0.0, 0.01, 0.5, 0.51],"soc")
+    self.assertFalse(
+      sensor_validate.validate_charging_parameter_reading([0.0, 0.01, 0.05, 0.051],"soc")
     )
   
   def test_reports_error_when_current_jumps(self):
