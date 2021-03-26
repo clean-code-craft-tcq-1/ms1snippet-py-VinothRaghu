@@ -21,5 +21,5 @@ def parameter_excheed_thresholds_limit(values_1,parameter_1):
            if(is_charge_rate_threshold_limit_exceeds(values_1[i], values_1[i + 1],parameter_1)):
                print(f'{parameter_1} maximum threshold limit exceeds')
                return True
-       print("limit not reached")
+       print(f'{parameter_1} limit not reached')
        return False
