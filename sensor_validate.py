@@ -1,5 +1,5 @@
 
-def  is_threshold_reached_for_change_rate(value, nextValue, maxDelta):
+def  is_charge_rate_threshold_reached(value, nextValue, maxDelta):
   if nextValue - value > maxDelta:
     return False
   return True
