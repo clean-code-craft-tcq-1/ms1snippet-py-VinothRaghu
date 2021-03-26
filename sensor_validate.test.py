@@ -13,7 +13,7 @@ class SensorValidatorTest(unittest.TestCase):
     )
   def test_reports_error_when_none_sent(self):
     self.assertFalse(
-      sensor_validate.validate_charging_parameter_reading(None)
+      sensor_validate.validate_charging_parameter_reading(None,"None")
     )
 
 if __name__ == "__main__":
