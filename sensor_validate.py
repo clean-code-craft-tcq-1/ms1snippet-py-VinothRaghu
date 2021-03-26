@@ -7,7 +7,7 @@ def  is_charge_rate_threshold_limit_exceeds(value, nextValue, parameter):
 
 
 def validate_charging_parameter_reading(values,parameter):
-    if(is_none(values) == False): 
+    if(values != None): 
         return parameter_excheed_thresholds_limit(values,parameter)
     else:
         print("Given input is None")
@@ -23,10 +23,3 @@ def parameter_excheed_thresholds_limit(values_1,parameter_1):
                return True
        print("limit not reached")
        return False
-
-
-def is_none(values):
-    if values is None:
-        return True
-    else:
-        return False
