@@ -1,8 +1,8 @@
 
 def  is_charge_rate_threshold_limit_exceeds(value, nextValue, maxDelta):
   if nextValue - value > maxDelta:
-    return False
-  return True
+    return True
+  return False
 
 def validate_soc_reading(values):
   last_but_one_reading = len(values) - 1
